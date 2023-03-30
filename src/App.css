@@ -1,38 +1,25 @@
 .App {
+  font-family: "Supermercado One", cursive;
+  padding: 10rem;
   text-align: center;
+  font-size: 20rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.countdown {
+  border: 2px solid black;
+  width: 30%;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.isRed {
+  color: #9d1d20;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.isBlue {
+  color: #1a0d58;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: "timer-regular";
+  src: url("../public//font/Black_Ops_One/BlackOpsOne-Regular.ttf");
 }
