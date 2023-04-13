@@ -1,20 +1,24 @@
 import "./App.css";
-import Countdown from "react-countdown";
+import { CountdownCircleTimer } from "react-countdown-circle-timer";
 
 const App = () => {
-  const renderer = ({ minutes, seconds }) => {
-    return (
-      <span>
-        {seconds < 10 && "0"}
-        {seconds}
-      </span>
-    );
-  };
-
+  const redColor = "#ec292c";
+  const blueColor = "#1a0d58";
   return (
-    <div className="App isRed">
-      <div className="countdown">
-        <Countdown date={Date.now() + 15000} renderer={renderer} />
+    <div className="App">
+      <div className="countdown" style={{ color: `${redColor}` }}>
+        <CountdownCircleTimer
+          isPlaying
+          duration={15}
+          colors={redColor}
+          size={200}
+          trailColor="#FFF"
+          trailStrokeWidth={2}
+          strokeWidth={12}
+          isSmoothColorTransition={false}
+        >
+          {({ remainingTime }) => remainingTime}
+        </CountdownCircleTimer>
       </div>
     </div>
   );

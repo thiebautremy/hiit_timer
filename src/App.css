@@ -1,22 +1,14 @@
-.App {
+#root {
   font-family: "Supermercado One", cursive;
-  padding: 10rem;
-  text-align: center;
-  font-size: 20rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: rgb(0, 255, 76);
+  min-height: 100%;
 }
 
 .countdown {
-  border: 2px solid black;
-  width: 30%;
-  margin: auto;
-}
-
-.isRed {
-  color: #9d1d20;
-}
-
-.isBlue {
-  color: #1a0d58;
+  font-size: 8rem;
 }
 
 @font-face {
